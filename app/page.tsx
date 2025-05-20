@@ -40,7 +40,7 @@ export default function Home() {
         <Button
           disabled={isFirstStep}
           variant={"ghost"}
-          className="p-2"
+          className="p-2 cursor-pointer"
           onClick={handleBack}
         >
           <FaArrowLeft />
@@ -48,11 +48,14 @@ export default function Home() {
         </Button>
 
         {isLastStep ? (
-          <Button className="p-7" onClick={handleNext}>
+          <Button className="p-7 cursor-pointer" onClick={handleNext}>
             {BUTTON_LABELS.NEXT}
           </Button>
         ) : (
-          <Button className="p-7" onClick={() => alert("Project Launched!")}>
+          <Button
+            className="p-7 cursor-pointer"
+            onClick={() => alert("Project Launched!")}
+          >
             {BUTTON_LABELS.SUBMIT}
           </Button>
         )}

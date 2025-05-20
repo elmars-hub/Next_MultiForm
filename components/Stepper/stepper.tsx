@@ -6,6 +6,8 @@ export type Step = {
   icon: IconType;
   label: string;
   content: React.ReactNode;
+  purpose?: string;
+  subtext?: string;
 };
 
 const Stepper = ({
