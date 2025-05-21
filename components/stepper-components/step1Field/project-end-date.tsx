@@ -36,8 +36,8 @@ export default function ProjectEndDate() {
   };
 
   return (
-    <div className="">
-      <Label className="text-gray-500">Start Date</Label>
+    <div className="mt-[52px]">
+      <Label className="text-gray-500">Target Date</Label>
 
       <Popover>
         <PopoverTrigger asChild>
