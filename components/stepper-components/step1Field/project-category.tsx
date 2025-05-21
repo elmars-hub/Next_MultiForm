@@ -49,19 +49,19 @@ export default function ProjectCategory() {
   }
   return (
     <div className="">
-      <Label htmlFor="project-category" className="text-gray-600">
+      <Label htmlFor="project-category" className="text-gray-600 mb-2">
         Project Category
       </Label>
 
       <Select value={selectedCategory} onValueChange={onValueChange}>
-        <SelectTrigger className="h-[52px] mt-1">
+        <SelectTrigger className="w-full h-14 mt-1">
           <SelectValue placeholder="Select a category" />
         </SelectTrigger>
 
         <SelectContent className="poppins">
           {selectedItems.map((item) => (
             <SelectItem key={item.label} value={item.label}>
-              <div className="flex item-center gap2">
+              <div className="flex items-center gap-2">
                 {/* Icon */}
                 <div className="bg-primary/10 size-8 rounded-md flex items-center justify-center">
                   <item.icon className="text-primary/45" />
